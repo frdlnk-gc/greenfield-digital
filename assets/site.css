@@ -325,6 +325,98 @@ footer li a:hover{color:var(--green-glow)}
 .foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:26px;flex-wrap:wrap;gap:14px;font-size:13.5px}
 .foot-bottom a{margin-left:22px}.foot-bottom a:hover{color:var(--green-glow)}
 
+/* ---------- Single-word brand logo ---------- */
+.brand .txt-single{font-weight:800;font-size:21px;letter-spacing:-.5px;line-height:1}
+.foot-brand .brand .txt-single{color:#fff}
+
+/* ---------- Hero floating partner card ---------- */
+.hero-main .hero-partner{position:absolute;right:48px;bottom:48px;background:#fff;border-radius:16px;padding:16px 20px;box-shadow:var(--shadow-lg);color:var(--ink);max-width:300px;z-index:3}
+.hero-partner .hp-head{display:flex;align-items:center;gap:10px;font-weight:700;font-size:14px;margin-bottom:12px}
+.hero-partner .hp-head .lf{width:30px;height:30px;border-radius:9px;background:var(--mint);display:grid;place-items:center;flex-shrink:0}
+.hero-partner .hp-head .lf svg{width:17px;height:17px}
+.hero-partner .hp-logos{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.hero-partner .hp-logos span{font-weight:800;font-size:12px;color:var(--ink-2);opacity:.65}
+
+/* ---------- Stats (flat variant) ---------- */
+.stats.flat .stat{background:transparent;border:0;padding:0}
+.stats.flat .stat .ic{background:var(--mint)}
+
+/* ---------- Marktführer cluster ---------- */
+.mf{padding:90px 0}
+.mf-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.mf-text h2{font-size:46px;font-weight:800;letter-spacing:-1.8px;line-height:1.08}
+.mf-text h2 .u{position:relative;white-space:nowrap}
+.mf-text h2 .u::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:8px;background:var(--green-glow);border-radius:6px;opacity:.7;z-index:-1}
+.mf-text>p{color:var(--muted);font-size:17px;margin:22px 0 22px;max-width:470px}
+.mf-link{font-weight:600;color:var(--green);display:inline-flex;align-items:center;gap:8px}
+.mf-part{margin-top:42px}
+.mf-part .lbl{font-size:14px;color:var(--muted);margin-bottom:16px;display:block}
+.mf-part .row{display:flex;align-items:center;gap:30px;flex-wrap:wrap;opacity:.55}
+.mf-part .row span{font-weight:700;font-size:12.5px;max-width:130px;line-height:1.3}
+.mf-cluster{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.mf-mini{background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:var(--shadow);min-height:170px}
+.mf-mini .ic{width:40px;height:40px;border-radius:11px;background:var(--mint);display:grid;place-items:center;margin-bottom:14px}
+.mf-mini .ic svg{width:20px;height:20px;stroke:var(--green)}
+.mf-mini b{font-size:16px;display:block;margin-bottom:6px}
+.mf-mini p{font-size:13.5px;color:var(--muted);line-height:1.5}
+.mf-center{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:200px;background:linear-gradient(160deg,var(--dark-2),var(--dark));color:#fff;border-radius:18px;padding:26px 22px;text-align:center;box-shadow:var(--shadow-lg);z-index:2}
+.mf-center h3{font-size:22px;font-weight:800;line-height:1.1}
+.mf-center p{font-size:13px;opacity:.8;margin:8px 0 16px}
+.mf-center .badge{display:inline-block;font-family:"Poppins";font-size:10px;letter-spacing:2px;text-transform:uppercase;border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:6px 12px}
+
+/* ---------- Google review card ---------- */
+.greview{padding:0 0 90px}
+.greview-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:40px 48px;display:flex;align-items:center;gap:40px;flex-wrap:wrap;max-width:920px;margin:0 auto}
+.greview-card .g{width:54px;height:54px;border-radius:50%;border:1px solid var(--line);display:grid;place-items:center;font-weight:800;font-size:26px;flex-shrink:0}
+.greview-card .sc{font-size:54px;font-weight:800;letter-spacing:-2px;line-height:1}
+.greview-card .sc small{font-size:22px;color:var(--muted)}
+.greview-card .stars{color:#FBB400;font-size:22px;letter-spacing:2px;margin-top:6px}
+.greview-card .meta{color:var(--muted);font-size:14px;margin:4px 0 8px}
+.greview-card .ga{font-weight:600;color:var(--green);font-size:14px}
+.greview-card .sp{flex:1}
+.greview-card .gl{display:flex;gap:18px;flex-wrap:wrap;opacity:.5;max-width:300px}
+.greview-card .gl span{font-weight:800;font-size:13px}
+
+/* ---------- Kernkompetenzen carousel ---------- */
+.kk{padding:20px 0 90px}
+.kk .sec-head{margin-bottom:40px}
+.kk-track{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.kk-card{position:relative;border-radius:var(--radius);overflow:hidden;min-height:460px;display:flex;flex-direction:column;justify-content:flex-end;padding:28px;color:#fff;box-shadow:var(--shadow)}
+.kk-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.kk-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,24,14,.12),rgba(8,24,14,.85));z-index:1}
+.kk-card.active::after{background:linear-gradient(180deg,rgba(15,122,64,.5),rgba(11,90,47,.92))}
+.kk-card>*{position:relative;z-index:2}
+.kk-card .lbl{font-family:"Poppins";font-size:11px;letter-spacing:2.5px;text-transform:uppercase;opacity:.85;margin-bottom:10px}
+.kk-card h3{font-size:28px;font-weight:800;letter-spacing:-.8px;line-height:1.05}
+.kk-card p{font-size:13.5px;line-height:1.55;margin-top:12px;color:rgba(255,255,255,.92)}
+.kk-card .btn{margin-top:18px;align-self:flex-start}
+
+/* ---------- Testimonial section ---------- */
+.tst{padding:30px 0 90px}
+.tst .u-text{position:relative}
+.tst .u-text::after{content:"";position:absolute;left:0;right:0;bottom:0;height:7px;background:var(--green-glow);border-radius:6px;opacity:.6;z-index:-1}
+.tst-card{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:16/8;max-width:980px;margin:0 auto;box-shadow:var(--shadow-lg);color:#fff}
+.tst-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.tst-card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,24,14,.08),rgba(8,24,14,.78));z-index:1}
+.tst-card>*{position:relative;z-index:2}
+.tst-badge{position:absolute;top:24px;left:24px;background:var(--green);color:#fff;font-size:13px;font-weight:600;padding:8px 16px;border-radius:30px}
+.tst-foot{position:absolute;left:28px;bottom:24px;display:flex;align-items:center;gap:16px}
+.tst-foot .tlogo{font-weight:800;font-size:16px}
+.tst-foot b{font-size:16px;display:block}
+.tst-foot span{font-size:13px;opacity:.85}
+.tst-more{text-align:center;margin-top:28px}
+.tst-more a{font-weight:600;color:var(--green);display:inline-flex;align-items:center;gap:8px}
+
+/* ---------- Instagram ---------- */
+.insta{padding:20px 0 80px;text-align:center}
+.insta h2{font-size:30px;font-weight:800;letter-spacing:-1px;margin-bottom:30px}
+.insta-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:14px}
+.insta-grid a{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:1/1}
+.insta-grid img{width:100%;height:100%;object-fit:cover;transition:.3s}
+.insta-grid a:hover img{transform:scale(1.06)}
+.insta-grid .ig{position:absolute;inset:0;display:grid;place-items:center;background:rgba(15,122,64,.5)}
+.insta-grid .ig svg{width:30px;height:30px}
+
 /* ---------- Reveal animation ---------- */
 .rv{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
 .rv.in{opacity:1;transform:none}
@@ -352,6 +444,12 @@ footer li a:hover{color:var(--green-glow)}
   .price.hot{transform:none}
   .foot-grid{grid-template-columns:1fr 1fr}
   .sec-head h2,.contact-left h2,.cta-inner h2{font-size:30px}
+  .mf-grid{grid-template-columns:1fr;gap:44px}
+  .mf-text h2{font-size:34px}
+  .kk-track{grid-template-columns:1fr 1fr}
+  .insta-grid{grid-template-columns:repeat(3,1fr)}
+  .greview-card{padding:30px;gap:24px}
+  .hero-partner{right:24px;bottom:24px;max-width:260px}
 }
 @media(max-width:600px){
   .hero-side{flex-direction:column}
@@ -361,4 +459,9 @@ footer li a:hover{color:var(--green-glow)}
   .review-box{padding:32px}
   .cta-inner{padding:60px 24px}
   .sec-head{margin-bottom:36px}
+  .mf-cluster{grid-template-columns:1fr}
+  .mf-center{position:static;transform:none;width:auto;margin:4px 0}
+  .kk-track,.insta-grid{grid-template-columns:1fr}
+  .tst-card{aspect-ratio:4/5}
+  .hero-main .hero-partner{position:static;right:auto;bottom:auto;max-width:none;margin-top:18px}
 }
