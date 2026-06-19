@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lavendel als Begleitpflanze · Greenfield Digital Blog</title>
+<meta name="description" content="Mediterrane Gartenkonzepte: Lavendel als Gestaltungselement. Welche Pflanzen perfekt mit Lavendel harmonieren – robust, pflegeleicht und ein Gewinn für Mensch und Natur.">
+<link rel="canonical" href="https://greenfield-digital.de/blog-artikel.html">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+/* ---- Article (page-specific) ---- */
+.art-hero{position:relative;border-radius:var(--radius);overflow:hidden;margin:20px 0 0;min-height:420px;display:flex;flex-direction:column;justify-content:flex-end;padding:48px;color:#fff;box-shadow:var(--shadow)}
+.art-hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.art-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,30,18,.2),rgba(8,24,14,.82));z-index:1}
+.art-hero>*{position:relative;z-index:2}
+.art-hero .pill{margin-bottom:16px}
+.art-hero h1{font-size:42px;font-weight:800;letter-spacing:-1.6px;line-height:1.1;max-width:780px}
+.art-hero .sub{margin-top:14px;font-size:17px;color:rgba(255,255,255,.9);max-width:620px}
+.art-meta{display:flex;flex-wrap:wrap;gap:20px;margin-top:22px;font-size:14px;color:rgba(255,255,255,.85)}
+.art-meta span{display:flex;align-items:center;gap:7px}
+.art-meta svg{width:16px;height:16px;stroke:var(--green-glow)}
+.art-grid{display:grid;grid-template-columns:1fr 320px;gap:56px;padding:56px 0 80px;align-items:start}
+.art-body h2{font-size:28px;font-weight:800;letter-spacing:-.8px;margin:34px 0 14px;line-height:1.2}
+.art-body h2:first-child{margin-top:0}
+.art-body p{color:var(--ink-2);font-size:17px;line-height:1.8;margin-bottom:18px}
+.art-body ul{list-style:none;display:grid;gap:12px;margin:8px 0 22px}
+.art-body li{display:flex;gap:12px;align-items:flex-start;font-size:16px;color:var(--ink-2);line-height:1.6}
+.art-body li svg{width:20px;height:20px;stroke:var(--green);flex-shrink:0;margin-top:3px}
+.art-quote{border-left:4px solid var(--green);background:var(--mint-2);border-radius:0 14px 14px 0;padding:22px 26px;font-size:18px;font-weight:600;color:var(--ink);margin:26px 0}
+.art-share{display:flex;align-items:center;gap:14px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:20px 0;margin:34px 0}
+.art-share b{font-size:14px}
+.art-share a{width:40px;height:40px;border-radius:11px;background:var(--mint-2);border:1px solid var(--mint-line);display:grid;place-items:center;transition:.18s}
+.art-share a:hover{background:var(--green);border-color:var(--green)}
+.art-share a:hover svg{stroke:#fff;fill:#fff}
+.art-share svg{width:18px;height:18px;stroke:var(--green-deep);fill:var(--green-deep)}
+.art-share .ct{margin-left:auto;font-size:14px;color:var(--muted)}
+.side{display:grid;gap:22px;position:sticky;top:96px}
+.side-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+.side-card h4{font-size:16px;font-weight:700;margin-bottom:14px}
+.side-card.green{background:linear-gradient(150deg,var(--green) 0%,var(--green-deep) 100%);color:#fff;border:0}
+.side-card.green p{font-size:14.5px;opacity:.92;margin-bottom:18px;line-height:1.6}
+.side-soc{display:flex;gap:10px}
+.side-soc a{width:38px;height:38px;border-radius:10px;background:var(--mint-2);border:1px solid var(--mint-line);display:grid;place-items:center;transition:.18s}
+.side-soc a:hover{background:var(--green);border-color:var(--green)}
+.side-soc a:hover svg{fill:#fff}
+.side-soc svg{width:18px;height:18px;fill:var(--green-deep)}
+.nl-form{display:flex;flex-direction:column;gap:10px}
+.nl-form input{border:1.5px solid rgba(255,255,255,.4);background:rgba(255,255,255,.12);border-radius:11px;padding:12px 14px;font-family:inherit;font-size:14.5px;color:#fff}
+.nl-form input::placeholder{color:rgba(255,255,255,.7)}
+.nl-form input:focus{outline:0;border-color:#fff;background:rgba(255,255,255,.18)}
+.nl-form .btn{background:#fff;color:var(--green-deep)}
+.side-art{display:flex;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.side-art:last-child{border-bottom:0}
+.side-art img{width:64px;height:56px;border-radius:10px;object-fit:cover;flex-shrink:0}
+.side-art b{font-size:14px;font-weight:600;line-height:1.3;display:block}
+.side-art span{font-size:12.5px;color:var(--muted)}
+@media(max-width:980px){.art-grid{grid-template-columns:1fr;gap:0}.side{position:static;margin-top:50px}.art-hero h1{font-size:32px}}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <a href="index.html" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21c5-2 8-6 8-12V4l-8 2-8-2v5c0 6 3 10 8 12Z" fill="#fff" opacity=".9"/><path d="M12 21V8M12 12l3-3M12 15l-3-3" stroke="#1B8E4F" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+      <span class="txt">Greenfield<small>Digital</small></span>
+    </a>
+    <div class="sp"></div>
+    <nav class="nav-links">
+      <div class="has-drop">
+        <a class="nav-link" href="recruiting.html">Leistungen
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m6 9 6 6 6-6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <div class="drop">
+          <a href="recruiting.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM19 16l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Recruiting</b><span>Nachhaltige Personalgewinnung</span></span></a>
+          <a href="neukundengewinnung.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM19 8v6M16 11h6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Neukundengewinnung</b><span>Planbar neue Aufträge</span></span></a>
+          <a href="social-media.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M7 11l5-7 5 7M5 11h14l-1.5 9h-11L5 11Z" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Social Media &amp; Branding</b><span>Platzhirsch in der Region</span></span></a>
+          <a href="digitalisierung.html"><span class="di"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M8 10l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span><b>Digitalisierung &amp; KI</b><span>Prozesse neu gedacht</span></span></a>
+        </div>
+      </div>
+      <a class="nav-link" href="ueber-uns.html">Über uns</a>
+      <a class="nav-link" href="ergebnisse.html">Ergebnisse</a>
+      <a class="nav-link active" href="blog.html">Ressourcen</a>
+      <a class="nav-link" href="karriere.html">Karriere</a>
+      <a class="btn btn-green btn-sm" href="index.html#kontakt">Jetzt starten</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menü öffnen"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<div class="m-overlay" id="mOverlay"></div>
+<nav class="m-menu" id="mMenu">
+  <span class="m-cap">Leistungen</span>
+  <a class="sub" href="recruiting.html">Recruiting</a>
+  <a class="sub" href="neukundengewinnung.html">Neukundengewinnung</a>
+  <a class="sub" href="social-media.html">Social Media &amp; Branding</a>
+  <a class="sub" href="digitalisierung.html">Digitalisierung &amp; KI</a>
+  <span class="m-cap">Mehr</span>
+  <a href="ueber-uns.html">Über uns</a>
+  <a href="ergebnisse.html">Ergebnisse</a>
+  <a href="bewerberpool.html">Bewerberpool</a>
+  <a href="blog.html">Ressourcen</a>
+  <a href="karriere.html">Karriere</a>
+  <a class="btn btn-green" href="index.html#kontakt">Jetzt starten</a>
+</nav>
+
+<!-- ARTICLE HERO -->
+<section>
+  <div class="wrap">
+    <div class="art-hero">
+      <img class="bg" src="assets/hero-article.jpg" alt="">
+      <span class="pill">★ Gestaltung</span>
+      <h1>Lavendel als Begleitpflanze: Welche Pflanzen harmonieren perfekt?</h1>
+      <p class="sub">Mediterrane Gartenkonzepte: Lavendel als Gestaltungselement für robuste, pflegeleichte Beete.</p>
+      <div class="art-meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0" stroke-linecap="round"/></svg>Greenfield Redaktion</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3" stroke-linecap="round" stroke-linejoin="round"/></svg>6 Min. Lesezeit</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>1.510 Aufrufe</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTICLE BODY + SIDEBAR -->
+<section>
+  <div class="wrap">
+    <div class="art-grid">
+      <article class="art-body">
+        <h2>Lavendel im GaLaBau: Robust, pflegeleicht und ein Gewinn für Mensch und Natur</h2>
+        <p>Lavendel zählt zu den beliebtesten Gestaltungspflanzen im Garten- und Landschaftsbau – und das aus gutem Grund. Die mediterrane Halbstrauch-Staude überzeugt mit ihrem unverwechselbaren Duft, einer langen Blütezeit und einer bemerkenswerten Trockenheitstoleranz. Gerade vor dem Hintergrund zunehmend heißer Sommer wird Lavendel für Betriebe zur verlässlichen Wahl.</p>
+        <p>Doch Lavendel entfaltet seine Wirkung erst richtig in der passenden Pflanzgemeinschaft. Die richtige Kombination sorgt nicht nur für ein harmonisches Gesamtbild, sondern auch für ein widerstandsfähiges, pflegeleichtes Beet, das über Jahre Freude bereitet.</p>
+
+        <div class="art-quote">„Eine durchdachte Pflanzenkombination spart langfristig Pflegeaufwand – und genau das ist es, was Kunden heute schätzen."</div>
+
+        <h2>Diese Pflanzen harmonieren perfekt mit Lavendel</h2>
+        <p>Entscheidend ist, dass die Begleitpflanzen ähnliche Standortansprüche haben: durchlässiger Boden, viel Sonne und wenig Wasser. Folgende Arten haben sich in der Praxis bewährt:</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Rosen</b> – der Klassiker. Lavendel hält durch seinen Duft Blattläuse fern und schützt so die empfindlicheren Rosen.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Katzenminze</b> – ergänzt das blau-violette Farbspiel und verlängert die Blühphase im Beet.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Salbei &amp; Thymian</b> – mediterrane Kräuter mit identischen Standortansprüchen, ideal für naturnahe Konzepte.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg><span><b>Ziergräser</b> – setzen strukturelle Akzente und sorgen für Bewegung im Beet.</span></li>
+        </ul>
+
+        <h2>Pflege-Tipps für langlebige Lavendelbeete</h2>
+        <p>Damit Lavendel kompakt und vital bleibt, sollte er zweimal jährlich zurückgeschnitten werden – einmal nach der Blüte und ein leichter Formschnitt im Frühjahr. Staunässe ist der größte Feind: Ein gut drainierter, eher magerer Boden ist die wichtigste Voraussetzung für gesunde Pflanzen.</p>
+        <p>Für Betriebe bedeutet das: Mit der richtigen Planung lassen sich attraktive, ökologisch wertvolle Beete anlegen, die nach der Etablierungsphase nur minimalen Pflegeaufwand erfordern – ein echtes Verkaufsargument gegenüber Kunden.</p>
+
+        <div class="art-share">
+          <b>Teilen:</b>
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9.5c0-.3.2-.5.5-.5Z"/></svg></a>
+          <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M6.94 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0ZM3 8.5h4V21H3V8.5ZM9.5 8.5h3.8v1.7h.05c.53-1 1.83-2 3.77-2 4 0 4.88 2.6 4.88 6V21h-4v-5.4c0-1.3 0-3-1.8-3s-2.1 1.4-2.1 2.9V21h-4V8.5Z"/></svg></a>
+          <a href="#" aria-label="Link kopieren"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="stroke:var(--green-deep);fill:none"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.5 1.5M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1.5-1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <span class="ct">214 mal geteilt</span>
+        </div>
+      </article>
+
+      <aside class="side">
+        <div class="side-card">
+          <h4>Folgen Sie uns</h4>
+          <div class="side-soc">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9.5c0-.3.2-.5.5-.5Z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 8.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Zm0 5.3a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM16.5 3.5h-9A4 4 0 0 0 3.5 7.5v9a4 4 0 0 0 4 4h9a4 4 0 0 0 4-4v-9a4 4 0 0 0-4-4Zm2.9 13a2.9 2.9 0 0 1-2.9 2.9h-9a2.9 2.9 0 0 1-2.9-2.9v-9A2.9 2.9 0 0 1 7.5 4.6h9a2.9 2.9 0 0 1 2.9 2.9v9Z"/></svg></a>
+            <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 4c.3 2 1.6 3.4 3.5 3.6v2.5c-1.3 0-2.5-.4-3.5-1.1v5.7a5.3 5.3 0 1 1-5.3-5.3c.3 0 .5 0 .8.1v2.6a2.7 2.7 0 1 0 1.9 2.6V4H16Z"/></svg></a>
+          </div>
+        </div>
+        <div class="side-card green">
+          <h4>Newsletter</h4>
+          <p>Praxiswissen für die grüne Branche – direkt in Ihr Postfach. Kein Spam, jederzeit abbestellbar.</p>
+          <form class="nl-form" id="nlForm">
+            <input name="email" type="email" required placeholder="Ihre E-Mail-Adresse">
+            <button type="submit" class="btn">Abonnieren</button>
+          </form>
+          <div id="nlOk" style="display:none;font-size:14.5px;margin-top:6px">✓ Vielen Dank! Bitte bestätigen Sie die E-Mail in Ihrem Postfach.</div>
+        </div>
+        <div class="side-card">
+          <h4>Neueste Artikel</h4>
+          <a class="side-art" href="blog-artikel.html"><img src="assets/blog-1.jpg" alt=""><div><b>Die Zukunft des GaLaBau: Trends 2026</b><span>12. Juni 2026</span></div></a>
+          <a class="side-art" href="blog-artikel.html"><img src="assets/blog-2.jpg" alt=""><div><b>Fachkräftemangel: 7 Strategien</b><span>5. Juni 2026</span></div></a>
+          <a class="side-art" href="blog-artikel.html"><img src="assets/blog-3.jpg" alt=""><div><b>Klimaresiliente Bepflanzung</b><span>7. Mai 2026</span></div></a>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- RELATED POSTS -->
+<section style="padding:0 0 90px;background:var(--soft)">
+  <div class="wrap" style="padding-top:80px">
+    <div class="sec-head rv"><span class="caps">Mehr lesen</span><h2>Verwandte Beiträge</h2></div>
+    <div class="posts">
+      <a class="post rv" href="blog-artikel.html">
+        <div class="pimg"><img src="assets/blog-2.jpg" alt=""><div class="ptags"><span>Branche</span></div></div>
+        <h3>Klimaresiliente Bepflanzung: Pflanzen für heiße Sommer</h3>
+        <div class="pmeta"><img class="av" src="assets/founder.jpg" alt="">Greenfield Redaktion · 7. Mai 2026</div>
+        <p>Trockenheitstolerante Arten, die auch in Zukunft zuverlässig gedeihen.</p>
+        <span class="vp">Beitrag lesen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="post rv" href="blog-artikel.html">
+        <div class="pimg"><img src="assets/blog-3.jpg" alt=""><div class="ptags"><span>Gestaltung</span></div></div>
+        <h3>Naturnahe Gärten: Strukturvielfalt richtig planen</h3>
+        <div class="pmeta"><img class="av" src="assets/founder.jpg" alt="">Greenfield Redaktion · 22. April 2026</div>
+        <p>Wie Strukturvielfalt Beete lebendig macht und die Biodiversität fördert.</p>
+        <span class="vp">Beitrag lesen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+      <a class="post rv" href="blog-artikel.html">
+        <div class="pimg"><img src="assets/blog-1.jpg" alt=""><div class="ptags"><span>Branche</span></div></div>
+        <h3>Die Zukunft des Garten- und Landschaftsbaus: Trends 2026</h3>
+        <div class="pmeta"><img class="av" src="assets/founder.jpg" alt="">Greenfield Redaktion · 12. Juni 2026</div>
+        <p>Von Fachkräftemangel bis Klimaanpassung – ein kompakter Ausblick.</p>
+        <span class="vp">Beitrag lesen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta">
+  <div class="cta-inner">
+    <img src="assets/cta-bg.jpg" alt="">
+    <h2>Bereit für dein grünes Wachstum?</h2>
+    <p>Vereinbare jetzt ein kostenloses Erstgespräch und werde unsere nächste Erfolgsgeschichte.</p>
+    <a href="index.html#kontakt" class="btn btn-white">Kostenloses Gespräch vereinbaren →</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand"><span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21c5-2 8-6 8-12V4l-8 2-8-2v5c0 6 3 10 8 12Z" fill="#fff" opacity=".9"/></svg></span><span class="txt">Greenfield<small style="color:rgba(255,255,255,.6)">Digital</small></span></div>
+        <p>Wachstums-Marktführer in der grünen Branche. Spezialisiert auf GaLaBau, Pflanzenhandel, Kulturbetriebe und verwandte Bereiche.</p>
+        <div class="foot-soc">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 9h3V6h-3c-1.7 0-3 1.3-3 3v2H9v3h2v6h3v-6h2.5l.5-3H14V9.5c0-.3.2-.5.5-.5Z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><path d="M12 8.8A3.2 3.2 0 1 0 12 15.2 3.2 3.2 0 0 0 12 8.8Zm0 5.3a2.1 2.1 0 1 1 0-4.2 2.1 2.1 0 0 1 0 4.2ZM16.5 3.5h-9A4 4 0 0 0 3.5 7.5v9a4 4 0 0 0 4 4h9a4 4 0 0 0 4-4v-9a4 4 0 0 0-4-4Zm2.9 13a2.9 2.9 0 0 1-2.9 2.9h-9a2.9 2.9 0 0 1-2.9-2.9v-9A2.9 2.9 0 0 1 7.5 4.6h9a2.9 2.9 0 0 1 2.9 2.9v9Zm-2.7-9.3a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/></svg></a>
+          <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M16 4c.3 2 1.6 3.4 3.5 3.6v2.5c-1.3 0-2.5-.4-3.5-1.1v5.7a5.3 5.3 0 1 1-5.3-5.3c.3 0 .5 0 .8.1v2.6a2.7 2.7 0 1 0 1.9 2.6V4H16Z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Leistungen</h4><ul><li><a href="recruiting.html">Recruiting</a></li><li><a href="neukundengewinnung.html">Neukunden</a></li><li><a href="social-media.html">Social Media Branding</a></li><li><a href="digitalisierung.html">Digitalisierung</a></li></ul><a class="btn btn-green btn-sm" href="index.html#kontakt" style="margin-top:6px">Bedarfsanalyse</a></div>
+      <div><h4>Unternehmen</h4><ul><li><a href="ueber-uns.html">Über uns</a></li><li><a href="ueber-uns.html">Unsere Mission</a></li><li><a href="ergebnisse.html">Erfolgsgeschichten</a></li><li><a href="blog.html">Blog</a></li><li><a href="karriere.html">Karriere</a></li></ul></div>
+      <div class="foot-contact"><h4>Kontakt</h4><div>Hansaring 61<br>50670 Köln<br>Deutschland</div><div><a href="mailto:hello@greenfield-digital.de">hello@greenfield-digital.de</a></div><div><a href="tel:+4922195018825">+49 221 95 01 88 25</a></div></div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2025 Greenfield Digital GmbH. Alle Rechte vorbehalten.</div>
+      <div><a href="datenschutz.html">Datenschutz</a><a href="agb.html">AGB</a><a href="impressum.html">Impressum</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){var b=document.getElementById('burger'),o=document.getElementById('mOverlay'),m=document.getElementById('mMenu');function close(){b.classList.remove('x');o.classList.remove('open');m.classList.remove('open');document.body.style.overflow='';}function toggle(){var open=m.classList.toggle('open');b.classList.toggle('x',open);o.classList.toggle('open',open);document.body.style.overflow=open?'hidden':'';}if(b){b.addEventListener('click',toggle);o.addEventListener('click',close);m.querySelectorAll('a').forEach(function(a){a.addEventListener('click',close);});}})();
+(function(){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.12});document.querySelectorAll('.rv').forEach(function(el,i){el.style.transitionDelay=(i%4*60)+'ms';io.observe(el);});})();
+(function(){var f=document.getElementById('nlForm');if(f){f.addEventListener('submit',function(e){e.preventDefault();f.style.display='none';document.getElementById('nlOk').style.display='block';});}})();
+</script>
+</body>
+</html>
