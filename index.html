@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Greenfield Digital · Recruiting, Marketing & Digitalisierung für die grüne Branche</title>
+<meta name="description" content="Greenfield Digital bringt die grüne Branche in Sichtbarkeit. Recruiting, Neukundengewinnung, Social-Media-Branding und Digitalisierung – mit Erfahrung aus über 700 Projekten.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://greenfield-digital.de/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Greenfield Digital">
+<meta property="og:title" content="Greenfield Digital · Marktführer im Recruiting für die grüne Branche">
+<meta property="og:description" content="Recruiting, Marketing & Digitalisierung für GaLaBau, Baumschulen und die grüne Branche.">
+<meta property="og:url" content="https://greenfield-digital.de/">
+<meta property="og:image" content="https://greenfield-digital.de/assets/hero.jpg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --green:#22A45D; --green-2:#1B8E4F; --green-deep:#0F7A40; --green-glow:#34C172;
+  --mint:#E8F7EF; --mint-2:#F2FBF6; --mint-line:#D4EEE0;
+  --ink:#15201A; --ink-2:#33433A; --muted:#62716A;
+  --bg:#FFFFFF; --soft:#F6FAF8; --line:#E7ECE9;
+  --radius:22px; --radius-sm:14px;
+  --shadow:0 1px 2px rgba(21,32,26,.04),0 10px 30px rgba(21,32,26,.07);
+  --shadow-lg:0 20px 50px rgba(21,32,26,.12);
+  --maxw:1320px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 40px}
+.caps{font-family:"Poppins",sans-serif;font-weight:500;font-size:13px;letter-spacing:3px;text-transform:uppercase}
+.green{color:var(--green)}
+section{position:relative}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:600;font-size:16px;padding:14px 26px;border-radius:12px;cursor:pointer;border:0;transition:.18s;white-space:nowrap}
+.btn-green{background:var(--green);color:#fff;box-shadow:0 8px 22px rgba(34,164,93,.28)}
+.btn-green:hover{background:var(--green-2);transform:translateY(-2px);box-shadow:0 12px 28px rgba(34,164,93,.36)}
+.btn-white{background:#fff;color:var(--ink)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+.btn-ghost:hover{border-color:var(--green);color:var(--green)}
+
+/* ---------- Header ---------- */
+header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:16px;height:78px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:21px;letter-spacing:-.5px}
+.brand .mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(140deg,var(--green-glow),var(--green-2));display:grid;place-items:center;box-shadow:0 6px 16px rgba(34,164,93,.4)}
+.brand .mark svg{width:20px;height:20px}
+.brand small{font-weight:500;color:var(--muted);letter-spacing:2px;font-size:12px;text-transform:uppercase}
+.nav .sp{flex:1}
+.nav-links{display:flex;align-items:center;gap:6px}
+.nav-link{font-weight:500;font-size:15.5px;color:var(--ink-2);padding:9px 14px;border-radius:9px;transition:.15s}
+.nav-link:hover{color:var(--green);background:var(--mint-2)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+.burger span{width:24px;height:2px;background:var(--ink);border-radius:2px;transition:.2s}
+
+/* ---------- Hero ---------- */
+.hero{padding:26px 0 30px}
+.hero-grid{display:grid;grid-template-columns:1.9fr 1fr;gap:24px;height:600px}
+.hero-main{position:relative;border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:48px;color:#fff;box-shadow:var(--shadow)}
+.hero-main::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,30,18,.15) 0%,rgba(10,30,18,.05) 40%,rgba(8,24,14,.78) 100%);z-index:1}
+.hero-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-main>*{position:relative;z-index:2}
+.hero-badge{position:absolute;top:32px;left:32px;display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.16);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.25);color:#fff;padding:9px 16px;border-radius:30px;font-size:13.5px;font-weight:600;z-index:2}
+.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--green-glow);box-shadow:0 0 0 4px rgba(52,193,114,.3)}
+.hero-main h1{font-size:54px;font-weight:800;line-height:1.08;letter-spacing:-2px;max-width:620px}
+.hero-main h1 .u{position:relative;color:var(--green-glow)}
+.hero-main h1 .u::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:10px;background:rgba(52,193,114,.35);border-radius:6px;z-index:-1}
+.hero-main p{margin:20px 0 28px;max-width:500px;font-size:17px;color:rgba(255,255,255,.9)}
+.hero-side{display:flex;flex-direction:column;gap:24px}
+.hero-card{position:relative;border-radius:var(--radius);overflow:hidden;flex:1;padding:26px;display:flex;flex-direction:column;justify-content:space-between;box-shadow:var(--shadow)}
+.hero-card.photo{color:#fff}
+.hero-card.photo::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,24,14,.25),rgba(8,24,14,.8));z-index:1}
+.hero-card.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-card.photo>*{position:relative;z-index:2}
+.hero-card.green{background:linear-gradient(150deg,var(--green) 0%,var(--green-deep) 100%);color:#fff}
+.hero-card .lbl{font-family:"Poppins";font-size:11px;letter-spacing:2.5px;text-transform:uppercase;opacity:.85;font-weight:500}
+.hero-card h3{font-size:23px;font-weight:700;line-height:1.2;margin-top:6px}
+.hero-card .lnk{font-weight:600;font-size:14.5px;display:inline-flex;align-items:center;gap:6px;margin-top:14px}
+.hero-card .qicon{width:42px;height:42px;border-radius:12px;background:rgba(255,255,255,.18);display:grid;place-items:center;margin-bottom:auto}
+
+/* ---------- Stats ---------- */
+.stats{padding:64px 0}
+.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.stat{background:linear-gradient(160deg,var(--mint) 0%,var(--mint-2) 100%);border:1px solid var(--mint-line);border-radius:var(--radius);padding:32px 30px}
+.stat .ic{width:52px;height:52px;border-radius:14px;background:rgba(34,164,93,.12);display:grid;place-items:center;margin-bottom:26px}
+.stat .ic svg{width:24px;height:24px;stroke:var(--green)}
+.stat .num{font-size:46px;font-weight:800;letter-spacing:-1.5px;line-height:1}
+.stat .t{font-weight:700;font-size:18px;margin:14px 0 8px}
+.stat .s{color:var(--muted);font-size:15px;line-height:1.5}
+
+/* ---------- Section heading ---------- */
+.sec-head{text-align:center;max-width:720px;margin:0 auto 56px}
+.sec-head .caps{color:var(--green);margin-bottom:14px;display:block}
+.sec-head h2{font-size:40px;font-weight:800;letter-spacing:-1.4px;line-height:1.12}
+.sec-head p{margin-top:16px;color:var(--muted);font-size:17px}
+
+/* ---------- Kernkompetenzen ---------- */
+.komp{padding:90px 0;background:var(--soft)}
+.komp-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.komp-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:38px;transition:.2s;position:relative;overflow:hidden}
+.komp-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--mint-line)}
+.komp-card .ic{width:56px;height:56px;border-radius:16px;background:linear-gradient(150deg,var(--green-glow),var(--green-2));display:grid;place-items:center;margin-bottom:24px;box-shadow:0 8px 20px rgba(34,164,93,.3)}
+.komp-card .ic svg{width:26px;height:26px;stroke:#fff}
+.komp-card h3{font-size:24px;font-weight:700;letter-spacing:-.5px}
+.komp-card .tag{font-family:"Poppins";font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:500;margin-bottom:6px}
+.komp-card p{color:var(--muted);font-size:15.5px;margin:14px 0 20px;line-height:1.65}
+.komp-card .lnk{font-weight:600;color:var(--green);display:inline-flex;align-items:center;gap:7px;font-size:15px}
+.komp-card .lnk svg{width:16px;height:16px;transition:.2s}
+.komp-card:hover .lnk svg{transform:translateX(4px)}
+
+/* ---------- Logos ---------- */
+.logos{padding:70px 0;text-align:center}
+.logos p{color:var(--muted);font-weight:500;font-size:15px;margin-bottom:34px}
+.logo-row{display:flex;align-items:center;justify-content:center;gap:56px;flex-wrap:wrap;opacity:.55}
+.logo-row span{font-weight:800;font-size:22px;letter-spacing:-.5px;color:var(--ink-2)}
+
+/* ---------- Review strip ---------- */
+.review{padding:30px 0 90px}
+.review-box{background:linear-gradient(150deg,var(--green) 0%,var(--green-deep) 100%);border-radius:var(--radius);padding:46px 56px;display:flex;align-items:center;gap:40px;color:#fff;flex-wrap:wrap}
+.review-box .score{font-size:64px;font-weight:800;letter-spacing:-2px;line-height:1}
+.review-box .score small{font-size:26px;opacity:.7}
+.review-box .stars{font-size:22px;letter-spacing:3px}
+.review-box .meta{font-size:15px;opacity:.9;margin-top:4px}
+.review-box .sp{flex:1}
+
+/* ---------- Map / Zahlen ---------- */
+.mapsec{padding:90px 0;background:var(--soft)}
+.map-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.map-vis{position:relative;border-radius:var(--radius);overflow:hidden;background:linear-gradient(160deg,var(--mint),#fff);aspect-ratio:1/1;display:grid;place-items:center;border:1px solid var(--mint-line)}
+.map-vis svg{width:78%;height:auto;filter:drop-shadow(0 16px 30px rgba(34,164,93,.25))}
+.map-stats{display:grid;grid-template-columns:1fr 1fr;gap:30px 40px}
+.map-stat .num{font-size:44px;font-weight:800;color:var(--green);letter-spacing:-1.5px;line-height:1}
+.map-stat .t{font-weight:700;font-size:18px;margin:10px 0 6px}
+.map-stat .s{color:var(--muted);font-size:14.5px;line-height:1.5}
+
+/* ---------- Process / Contact ---------- */
+.contact{padding:90px 0}
+.contact-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:60px}
+.contact-left .caps{color:var(--green);display:block;margin-bottom:16px}
+.contact-left h2{font-size:40px;font-weight:800;letter-spacing:-1.4px;line-height:1.12}
+.contact-left>p{color:var(--muted);font-size:17px;margin:18px 0 32px;max-width:440px}
+.founder{display:flex;align-items:center;gap:16px;padding:22px;background:var(--mint-2);border:1px solid var(--mint-line);border-radius:var(--radius-sm);max-width:420px}
+.founder img{width:60px;height:60px;border-radius:50%;object-fit:cover}
+.founder b{font-size:16px}.founder span{color:var(--muted);font-size:14px;display:block}
+.trust-row{display:flex;gap:26px;margin-top:30px;flex-wrap:wrap}
+.trust-row div{display:flex;align-items:center;gap:8px;font-weight:600;font-size:15px;color:var(--ink-2)}
+.trust-row svg{width:18px;height:18px;stroke:var(--green)}
+.form-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:36px;box-shadow:var(--shadow)}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.field{margin-bottom:16px}
+.field label{display:block;font-weight:600;font-size:14px;margin-bottom:7px}
+.field input,.field textarea,.field select{width:100%;border:1.5px solid var(--line);border-radius:11px;padding:13px 15px;font-family:inherit;font-size:15px;color:var(--ink);transition:.15s;background:#fff}
+.field input:focus,.field textarea:focus,.field select:focus{outline:0;border-color:var(--green);box-shadow:0 0 0 4px rgba(34,164,93,.12)}
+.field textarea{resize:vertical;min-height:90px}
+.chips{display:flex;flex-wrap:wrap;gap:9px}
+.chip{position:relative;cursor:pointer}
+.chip input{position:absolute;opacity:0}
+.chip span{display:inline-block;border:1.5px solid var(--line);border-radius:30px;padding:9px 16px;font-size:14px;font-weight:500;transition:.15s}
+.chip input:checked+span{background:var(--mint);border-color:var(--green);color:var(--green-deep)}
+.form-note{display:flex;gap:12px;align-items:flex-start;background:var(--mint-2);border-radius:12px;padding:14px 16px;margin:6px 0 18px}
+.form-note svg{width:20px;height:20px;stroke:var(--green);flex-shrink:0;margin-top:2px}
+.form-note b{font-size:14.5px}.form-note p{font-size:13.5px;color:var(--muted);margin-top:2px}
+.form-meta{display:flex;gap:20px;justify-content:center;margin-top:16px;color:var(--muted);font-size:13.5px;flex-wrap:wrap}
+.form-meta span{display:flex;align-items:center;gap:6px}
+.form-disc{text-align:center;color:var(--muted);font-size:12.5px;margin-top:14px}
+.form-ok{display:none;text-align:center;padding:40px 20px}
+.form-ok svg{width:56px;height:56px;stroke:var(--green);margin:0 auto 16px}
+.form-ok h3{font-size:24px;font-weight:800}
+
+/* ---------- Footer ---------- */
+footer{background:var(--ink);color:rgba(255,255,255,.7);padding:70px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1)}
+.foot-brand .brand{color:#fff;margin-bottom:18px}
+.foot-brand p{font-size:14.5px;line-height:1.7;max-width:300px}
+footer h4{color:#fff;font-size:15px;font-weight:700;margin-bottom:18px}
+footer ul{list-style:none}
+footer li{margin-bottom:11px}
+footer li a{font-size:14.5px;transition:.15s}
+footer li a:hover{color:var(--green-glow)}
+.foot-contact div{font-size:14.5px;margin-bottom:9px;line-height:1.5}
+.foot-bottom{display:flex;justify-content:space-between;align-items:center;padding-top:26px;flex-wrap:wrap;gap:14px;font-size:13.5px}
+.foot-bottom a{margin-left:22px}.foot-bottom a:hover{color:var(--green-glow)}
+
+/* ---------- Reveal animation ---------- */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1)}
+.rv.in{opacity:1;transform:none}
+
+/* ---------- Responsive ---------- */
+@media(max-width:980px){
+  .wrap{padding:0 22px}
+  .nav-links{display:none}
+  .burger{display:flex}
+  .nav-links.open{display:flex;position:absolute;top:78px;left:0;right:0;flex-direction:column;background:#fff;padding:16px 22px;border-bottom:1px solid var(--line);gap:4px}
+  .hero-grid{grid-template-columns:1fr;height:auto}
+  .hero-main{height:520px}
+  .hero-side{flex-direction:row}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .komp-grid{grid-template-columns:1fr}
+  .map-grid,.contact-grid{grid-template-columns:1fr;gap:40px}
+  .map-vis{max-width:420px;margin:0 auto;width:100%}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .hero-main h1{font-size:40px}
+  .sec-head h2,.contact-left h2{font-size:30px}
+}
+@media(max-width:600px){
+  .hero-side{flex-direction:column}
+  .stats-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+  .foot-grid{grid-template-columns:1fr}
+  .review-box{padding:32px}
+  .hero-main{padding:30px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header>
+  <div class="wrap nav">
+    <a href="/" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21c5-2 8-6 8-12V4l-8 2-8-2v5c0 6 3 10 8 12Z" fill="#fff" opacity=".9"/><path d="M12 21V8M12 12l3-3M12 15l-3-3" stroke="var(--green-2)" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+      <span>Greenfield<br><small>Digital</small></span>
+    </a>
+    <div class="sp"></div>
+    <nav class="nav-links" id="menu">
+      <a class="nav-link" href="#leistungen">Leistungen</a>
+      <a class="nav-link" href="#ueber">Über uns</a>
+      <a class="nav-link" href="#ergebnisse">Ergebnisse</a>
+      <a class="nav-link" href="#ressourcen">Ressourcen</a>
+      <a class="nav-link" href="#karriere">Karriere</a>
+      <a class="btn btn-green" href="#kontakt" style="padding:11px 22px;font-size:15px">Jetzt starten</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menü"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div class="hero-main">
+        <img src="assets/hero.jpg" alt="Grüne Landschaft – Greenfield Digital">
+        <span class="hero-badge"><span class="dot"></span>Marktführer im Grünen Recruiting</span>
+        <h1>Unser Herz schlägt für <span class="u">grünes Wachstum.</span></h1>
+        <p>Jetzt qualifizierte Fachkräfte und Kunden gewinnen – in unserem bewährten 45-Tage-Prozess mit 100%-Garantie.</p>
+        <div><a href="#kontakt" class="btn btn-white">Kostenloses Gespräch vereinbaren →</a></div>
+      </div>
+      <div class="hero-side">
+        <div class="hero-card photo">
+          <img src="assets/team-1.jpg" alt="Neukunden gewinnen im GaLaBau">
+          <span class="lbl">Neukundengewinnung</span>
+          <div>
+            <h3>Neukunden gewinnen im GaLaBau.</h3>
+            <a class="lnk" href="#leistungen">Mehr erfahren →</a>
+          </div>
+        </div>
+        <div class="hero-card green">
+          <span class="qicon"><svg viewBox="0 0 24 24" width="22" height="22" fill="none"><path d="M8 10h8M8 14h5M21 12a8 8 0 0 1-11.3 7.3L4 21l1.7-5.7A8 8 0 1 1 21 12Z" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="lbl">Wir halten Wort</span>
+          <div>
+            <h3>Über 700 zufriedene Kunden</h3>
+            <a class="lnk" href="#ergebnisse">Kundenstimmen lesen →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ============ -->
+<section class="stats" id="ergebnisse">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="num">1.000+</div><div class="t">Fachkräfte vermittelt</div>
+        <div class="s">Erfolgreich mit Unternehmen zusammengebracht</div>
+      </div>
+      <div class="stat rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" stroke-linecap="round"/></svg></div>
+        <div class="num">770+</div><div class="t">Projekte abgeschlossen</div>
+        <div class="s">In der gesamten grünen Branche</div>
+      </div>
+      <div class="stat rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.4" fill="var(--green)"/></svg></div>
+        <div class="num">21.200+</div><div class="t">Qualifizierte Bewerbungen</div>
+        <div class="s">Für unsere Kunden generiert</div>
+      </div>
+      <div class="stat rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M3 17l6-6 4 4 8-8M21 7v4M21 7h-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="num">100%</div><div class="t">Garantie</div>
+        <div class="s">Wir nehmen deine Mitarbeitersuche ernst.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KERNKOMPETENZEN ============ -->
+<section class="komp" id="leistungen">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="caps">Leistungen</span>
+      <h2>Unsere Kernkompetenzen – Ihre Lösungen</h2>
+      <p>Individuelle Strategien aus einer Hand. Wir bringen die grüne Branche in Sichtbarkeit – durch gezieltes Recruiting, Marketing und digitale Lösungen.</p>
+    </div>
+    <div class="komp-grid">
+      <div class="komp-card rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM19 8v6M16 11h6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="tag">Neukunden</div>
+        <h3>Neukundengewinnung</h3>
+        <p>Wir sorgen dafür, dass dein Betrieb von den richtigen Kunden gefunden wird: kurz-, mittel- und langfristig. Durch gezieltes Marketing und klare Positionierung erfährt dein Wunschkunde, warum gerade deine Lösung sein Problem löst.</p>
+        <a class="lnk" href="#kontakt">Strategie kennenlernen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="komp-card rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8ZM19 16l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="tag">Recruiting</div>
+        <h3>Recruiting</h3>
+        <p>Wir finden qualifizierte, grüne Fachkräfte und überzeugen diese von deinem Betrieb. Mit Reichweite, strategischer Content-Produktion und KI-gestützten Marketing-Prozessen, die in der grünen Branche nachweislich funktionieren.</p>
+        <a class="lnk" href="#kontakt">Finde es heraus <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="komp-card rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M7 11l5-7 5 7M5 11h14l-1.5 9h-11L5 11Z" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="tag">Social Media</div>
+        <h3>Social Media &amp; Branding</h3>
+        <p>Wir machen deine Marke langfristig zum Platzhirschen in der Region. Mit Social-Media-Inhalten, die viral gehen, Bewerber begeistern, Kunden überzeugen und dein Image auf ein neues Level heben.</p>
+        <a class="lnk" href="#kontakt">Schauen wir uns an <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+      <div class="komp-card rv">
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M8 21h8M12 18v3M8 10l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+        <div class="tag">Digitalisierung &amp; KI</div>
+        <h3>Digitalisierung</h3>
+        <p>Von Webentwicklung über Automatisierung bis hin zu strategischer Beratung: Digitale Lösungen, die die Prozesse in deinem Unternehmen neu denken. Ergebnis: Mehr Geschwindigkeit, weniger manuelle Arbeit, klare Abläufe.</p>
+        <a class="lnk" href="#kontakt">Mit Digitalisierung starten <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LOGOS ============ -->
+<section class="logos" id="ueber">
+  <div class="wrap">
+    <p>Vertraut von führenden Unternehmen der grünen Branche</p>
+    <div class="logo-row">
+      <span>GaLaBau</span><span>BaumPartner</span><span>GrünTeam</span><span>Floramax</span><span>Naturwerk</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEW STRIP ============ -->
+<section class="review">
+  <div class="wrap">
+    <div class="review-box rv">
+      <div class="score">4.9<small>/5</small></div>
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="meta">40+ Google Bewertungen</div>
+      </div>
+      <div class="sp"></div>
+      <a href="#ergebnisse" class="btn btn-white">Alle ansehen</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAP / ZAHLEN ============ -->
+<section class="mapsec">
+  <div class="wrap">
+    <div class="map-grid">
+      <div class="map-vis rv">
+        <svg viewBox="0 0 200 240" fill="none" aria-label="Deutschland">
+          <path d="M96 8l10 6 8-2 6 8-2 8 8 6-2 10 10 8-4 10 6 12-8 8 2 14-10 6-2 12-14 4-6 10-12-2-8 8-10-6 2-12-12-6 4-12-10-8 6-10-6-10 8-8-2-12 12-6 4-12 14-2 6-10 12 2Z" fill="var(--green)" opacity=".15"/>
+          <path d="M96 8l10 6 8-2 6 8-2 8 8 6-2 10 10 8-4 10 6 12-8 8 2 14-10 6-2 12-14 4-6 10-12-2-8 8-10-6 2-12-12-6 4-12-10-8 6-10-6-10 8-8-2-12 12-6 4-12 14-2 6-10 12 2Z" stroke="var(--green)" stroke-width="2" stroke-linejoin="round"/>
+          <circle cx="80" cy="70" r="5" fill="var(--green)"/><circle cx="120" cy="110" r="5" fill="var(--green)"/>
+          <circle cx="95" cy="150" r="5" fill="var(--green)"/><circle cx="70" cy="120" r="5" fill="var(--green)"/>
+          <circle cx="130" cy="170" r="5" fill="var(--green)"/>
+        </svg>
+      </div>
+      <div>
+        <div class="map-stats">
+          <div class="map-stat rv"><div class="num">700+</div><div class="t">Partnerbetriebe</div><div class="s">ausschließlich in der grünen Branche</div></div>
+          <div class="map-stat rv"><div class="num">20+</div><div class="t">Experten im Team</div><div class="s">Recruiting, Performance Marketing, Social Media, Branding & Development</div></div>
+          <div class="map-stat rv"><div class="num">9+</div><div class="t">Jahre Erfahrung</div><div class="s">aus und für die grüne Branche</div></div>
+          <div class="map-stat rv"><div class="num">92%</div><div class="t">unserer Kunden</div><div class="s">vertrauen uns in mehr als einer Dienstleistung</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ KONTAKT / PROZESS ============ -->
+<section class="contact" id="kontakt">
+  <div class="wrap">
+    <div class="contact-grid">
+      <div class="contact-left rv">
+        <span class="caps">Jetzt Unterstützung anfordern</span>
+        <h2>Du benötigst Unterstützung?</h2>
+        <p>Unser bewährter 45-Tage-Prozess für deine perfekte Positionierung. Lass uns über deine Herausforderung sprechen.</p>
+        <div class="founder">
+          <img src="assets/team-1.jpg" alt="Frederik Linke">
+          <div><b>Frederik Linke</b><span>Geschäftsführer von Greenfield Digital</span></div>
+        </div>
+        <div class="trust-row">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Unverbindlich</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>Kostenlos</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M12 7v5l3 3" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="9"/></svg>48h Antwortzeit</div>
+        </div>
+      </div>
+      <div class="form-card rv">
+        <form id="leadForm">
+          <div class="form-row">
+            <div class="field"><label>Name *</label><input name="name" required placeholder="Max Mustermann"></div>
+            <div class="field"><label>Unternehmen *</label><input name="unternehmen" required placeholder="Mustermann GmbH"></div>
+          </div>
+          <div class="form-row">
+            <div class="field"><label>E-Mail *</label><input name="email" type="email" required placeholder="max@mustermann.de"></div>
+            <div class="field"><label>Telefon</label><input name="telefon" placeholder="+49 123 456789"></div>
+          </div>
+          <div class="field">
+            <label>Was ist deine aktuelle Herausforderung?</label>
+            <div class="chips">
+              <label class="chip"><input type="checkbox" name="herausforderung" value="Mitarbeitergewinnung"><span>Mitarbeitergewinnung</span></label>
+              <label class="chip"><input type="checkbox" name="herausforderung" value="Social Media Branding"><span>Social Media Branding</span></label>
+              <label class="chip"><input type="checkbox" name="herausforderung" value="Betriebsnachfolger finden"><span>Betriebsnachfolger finden</span></label>
+              <label class="chip"><input type="checkbox" name="herausforderung" value="Neukundengewinnung"><span>Neukundengewinnung</span></label>
+              <label class="chip"><input type="checkbox" name="herausforderung" value="Video-/Bildproduktion"><span>Video-/Bildproduktion</span></label>
+              <label class="chip"><input type="checkbox" name="herausforderung" value="Digital- & Automatisierungslösungen"><span>Digital- &amp; Automatisierungslösungen</span></label>
+            </div>
+          </div>
+          <div class="field"><label>Deine Nachricht (optional)</label><textarea name="nachricht" placeholder="Erzähl uns mehr über dein Projekt..."></textarea></div>
+          <div class="form-note">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><b>Schnelle Antwort garantiert</b><p>Wir melden uns innerhalb von 48 Stunden persönlich bei dir.</p></div>
+          </div>
+          <button type="submit" class="btn btn-green" style="width:100%;justify-content:center">Kostenlose Beratung anfragen</button>
+          <div class="form-meta">
+            <span>✓ Unverbindlich</span><span>✓ Kostenlos</span><span>✓ 48h Antwortzeit</span>
+          </div>
+          <p class="form-disc">Deine Daten werden vertraulich behandelt und nicht an Dritte weitergegeben.</p>
+        </form>
+        <div class="form-ok" id="formOk">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 12l3 3 5-6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <h3>Vielen Dank!</h3>
+          <p style="color:var(--muted);margin-top:8px">Wir haben deine Anfrage erhalten und melden uns innerhalb von 48 Stunden bei dir.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="karriere">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="brand"><span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M12 21c5-2 8-6 8-12V4l-8 2-8-2v5c0 6 3 10 8 12Z" fill="#fff" opacity=".9"/></svg></span><span>Greenfield <small style="color:rgba(255,255,255,.6)">Digital</small></span></div>
+        <p>Marktführer im Recruiting für die grüne Branche. Sichtbarkeit, Fachkräfte und Wachstum – aus einer Hand.</p>
+      </div>
+      <div>
+        <h4>Leistungen</h4>
+        <ul>
+          <li><a href="#leistungen">Recruiting</a></li>
+          <li><a href="#leistungen">Neukunden</a></li>
+          <li><a href="#leistungen">Social Media Branding</a></li>
+          <li><a href="#leistungen">Digitalisierung</a></li>
+          <li><a href="#kontakt">Bedarfsanalyse</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Unternehmen</h4>
+        <ul>
+          <li><a href="#ueber">Über uns</a></li>
+          <li><a href="#ueber">Unsere Mission</a></li>
+          <li><a href="#ergebnisse">Erfolgsgeschichten</a></li>
+          <li><a href="#ressourcen">Blog</a></li>
+          <li><a href="#karriere">Karriere</a></li>
+        </ul>
+      </div>
+      <div class="foot-contact">
+        <h4>Kontakt</h4>
+        <div>Hansaring 61<br>50670 Köln<br>Deutschland</div>
+        <div><a href="mailto:info@greenfield-digital.de">info@greenfield-digital.de</a></div>
+        <div><a href="tel:+4922195018825">+49 221 95 01 88 25</a></div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div>© 2025 Greenfield Digital. Alle Rechte vorbehalten.</div>
+      <div>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="agb.html">AGB</a>
+        <a href="impressum.html">Impressum</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile menu
+const burger=document.getElementById('burger'),menu=document.getElementById('menu');
+burger.addEventListener('click',()=>menu.classList.toggle('open'));
+menu.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>menu.classList.remove('open')));
+
+// Scroll reveal
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach((el,i)=>{el.style.transitionDelay=(i%4*60)+'ms';io.observe(el);});
+
+// Count-up for stat numbers
+function countUp(el){
+  const raw=el.textContent.trim();const m=raw.match(/([\d.]+)/);if(!m)return;
+  const target=parseFloat(m[1].replace('.',''));const suffix=raw.replace(/[\d.]+/,'');
+  let cur=0;const step=Math.ceil(target/40);
+  const t=setInterval(()=>{cur+=step;if(cur>=target){cur=target;clearInterval(t);}
+    el.textContent=(cur>=1000?cur.toLocaleString('de-DE'):cur)+suffix;},22);
+}
+const ioNum=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){countUp(e.target);ioNum.unobserve(e.target);}})},{threshold:.6});
+document.querySelectorAll('.stat .num, .map-stat .num').forEach(el=>ioNum.observe(el));
+
+// Form -> Make webhook (Kunden)
+const WEBHOOK="https://hook.eu1.make.com/1vmdn2c448cipbaicb2u9hqym6jl8fdk";
+document.getElementById('leadForm').addEventListener('submit',async(e)=>{
+  e.preventDefault();const f=e.target;const btn=f.querySelector('button[type=submit]');
+  btn.disabled=true;btn.textContent='Wird gesendet...';
+  const data={};new FormData(f).forEach((v,k)=>{data[k]=data[k]?data[k]+', '+v:v;});
+  data.quelle='greenfield-digital.de';data.zeitpunkt=new Date().toISOString();
+  try{
+    await fetch(WEBHOOK,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(data)});
+    f.style.display='none';document.getElementById('formOk').style.display='block';
+  }catch(err){btn.disabled=false;btn.textContent='Kostenlose Beratung anfragen';alert('Es ist ein Fehler aufgetreten. Bitte versuche es erneut oder schreibe an info@greenfield-digital.de.');}
+});
+</script>
+</body>
+</html>
