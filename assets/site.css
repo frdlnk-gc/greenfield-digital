@@ -306,7 +306,7 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.86);backdro
 .cta-inner p{font-size:17px;opacity:.9;max-width:560px;margin:18px auto 30px}
 
 /* ---------- Footer ---------- */
-footer{background:var(--ink);color:rgba(255,255,255,.7);padding:70px 0 30px}
+footer{background:linear-gradient(180deg,#021308 0%,#000000 70%);color:rgba(255,255,255,.7);padding:70px 0 30px}
 .foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1.2fr;gap:40px;padding-bottom:48px;border-bottom:1px solid rgba(255,255,255,.1)}
 .foot-brand .brand{color:#fff;margin-bottom:18px}
 .foot-brand p{font-size:14.5px;line-height:1.7;max-width:300px}
