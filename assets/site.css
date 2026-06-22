@@ -134,6 +134,8 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.86);backdro
 .logo-row{display:flex;align-items:center;justify-content:center;gap:50px;flex-wrap:wrap;opacity:.55}
 .logo-row span{font-weight:800;font-size:21px;letter-spacing:-.5px;color:var(--ink-2)}
 .logo-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.logo-wall{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:40px}
+.logo-wall .lw{background:#fff;border:1px solid var(--line);border-radius:14px;height:118px;display:grid;place-items:center;font-weight:800;font-size:18px;letter-spacing:-.3px;color:var(--ink-2);opacity:.62;text-align:center;padding:0 16px;line-height:1.2}
 .logo-cell{background:#fff;border:1px solid var(--line);border-radius:14px;height:96px;display:grid;place-items:center;font-weight:800;font-size:18px;color:var(--ink-2);opacity:.75;transition:.18s}
 .logo-cell:hover{opacity:1;box-shadow:var(--shadow);border-color:var(--mint-line)}
 
