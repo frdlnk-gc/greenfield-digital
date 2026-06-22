@@ -11,6 +11,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/site.css">
+<style>
+/* ---- Blog-Overview (page-specific) ---- */
+.blog-hero{position:relative;border-radius:var(--radius);overflow:hidden;margin:20px 0 0;min-height:420px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:64px 40px;color:#fff;box-shadow:var(--shadow)}
+.blog-hero img.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.blog-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,30,18,.5),rgba(8,24,14,.82));z-index:1}
+.blog-hero>*{position:relative;z-index:2}
+.blog-hero .bh-badge{display:inline-flex;align-items:center;gap:9px;background:var(--green);color:#fff;padding:10px 18px;border-radius:30px;font-size:13.5px;font-weight:600;box-shadow:0 6px 18px rgba(12,174,128,.35);margin-bottom:22px}
+.blog-hero .bh-badge .dot{width:8px;height:8px;border-radius:50%;background:#fff;box-shadow:0 0 0 4px rgba(255,255,255,.3)}
+.blog-hero h1{font-size:54px;font-weight:800;line-height:1.08;letter-spacing:-2px;max-width:760px}
+.blog-hero h1 .u{color:var(--green-glow)}
+.blog-hero p{font-size:17px;color:rgba(255,255,255,.88);max-width:580px;margin:18px 0 0;line-height:1.6}
+.blog-hero .btn{margin-top:28px}
+.post .pimg .pbtn{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;z-index:2}
+.post .pimg .pbtn svg{width:15px;height:15px;stroke:var(--ink);fill:none}
+.post .ptags span.cat{background:var(--green);color:#fff}
+.post .ptags span.rt{background:rgba(0,0,0,.42);color:#fff;backdrop-filter:blur(4px)}
+@media(max-width:680px){.blog-hero h1{font-size:34px}.blog-hero{min-height:340px;padding:48px 24px}}
+</style>
 </head>
 <body>
 
@@ -60,14 +78,16 @@
   <a class="btn btn-green" href="index.html#kontakt">Jetzt starten</a>
 </nav>
 
-<!-- HERO (centered) -->
-<section class="hero-c">
-  <span class="glow l"></span><span class="glow r"></span>
+<!-- HERO (dark image, centered) -->
+<section>
   <div class="wrap">
-    <span class="pill">★ Marktführer für grünes Recruiting</span>
-    <h1>Der Blog für Wachstum<br>in der <span class="green">Grünen Branche</span></h1>
-    <p class="sub">Praxiswissen, Trends und Strategien für Betriebe im Garten- und Landschaftsbau – kompakt, relevant und direkt anwendbar.</p>
-    <div style="margin-top:30px"><a href="#beitraege" class="btn btn-green">Beiträge entdecken</a></div>
+    <div class="blog-hero">
+      <img class="bg" src="assets/hero-blog.jpg" alt="">
+      <span class="bh-badge"><span class="dot"></span>Marktführer für grünes Recruiting</span>
+      <h1>Der Blog für Wachstum<br>in der <span class="u">grünen Branche</span></h1>
+      <p>Praxiswissen, Trends und Strategien für Betriebe im Garten- und Landschaftsbau – kompakt, relevant und direkt anwendbar.</p>
+      <a href="#beitraege" class="btn btn-white">Beiträge entdecken</a>
+    </div>
   </div>
 </section>
 
@@ -76,42 +96,42 @@
   <div class="wrap">
     <div class="posts">
       <a class="post rv" href="blog-artikel.html">
-        <div class="pimg"><img src="assets/blog-1.jpg" alt=""><div class="ptags"><span>Branche</span></div></div>
+        <div class="pimg"><img src="assets/blog-1.jpg" alt=""><div class="ptags"><span class="rt">6 Min.</span><span class="cat">Branche</span></div><span class="pbtn"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
         <h3>Die Zukunft des Garten- und Landschaftsbaus: Trends 2026</h3>
         <div class="pmeta"><img class="av" src="assets/founder.jpg" alt="">Greenfield Redaktion · 12. Juni 2026 · 1.240 Aufrufe</div>
         <p>Welche Entwicklungen prägen die grüne Branche – von Fachkräftemangel bis Klimaanpassung. Ein kompakter Ausblick für Betriebsinhaber.</p>
         <span class="vp">Beitrag lesen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
       <a class="post rv" href="blog-artikel.html">
-        <div class="pimg"><img src="assets/blog-2.jpg" alt=""><div class="ptags"><span>Recruiting</span></div></div>
+        <div class="pimg"><img src="assets/blog-2.jpg" alt=""><div class="ptags"><span class="rt">8 Min.</span><span class="cat">Recruiting</span></div><span class="pbtn"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
         <h3>Fachkräftemangel im GaLaBau: 7 Strategien, die wirklich funktionieren</h3>
         <div class="pmeta"><img class="av" src="assets/founder.jpg" alt="">Greenfield Redaktion · 5. Juni 2026 · 980 Aufrufe</div>
         <p>Warum klassische Stellenanzeigen nicht mehr reichen – und wie moderne Betriebe heute planbar neue Mitarbeiter gewinnen.</p>
         <span class="vp">Beitrag lesen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
       <a class="post rv" href="blog-artikel.html">
-        <div class="pimg"><img src="assets/blog-3.jpg" alt=""><div class="ptags"><span>Gestaltung</span></div></div>
+        <div class="pimg"><img src="assets/blog-3.jpg" alt=""><div class="ptags"><span class="rt">5 Min.</span><span class="cat">Gestaltung</span></div><span class="pbtn"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
         <h3>Lavendel als Begleitpflanze: Welche Pflanzen harmonieren perfekt?</h3>
         <div class="pmeta"><img class="av" src="assets/founder.jpg" alt="">Greenfield Redaktion · 28. Mai 2026 · 1.510 Aufrufe</div>
         <p>Mediterrane Gartenkonzepte liegen im Trend. Wir zeigen, welche Pflanzkombinationen robust, pflegeleicht und optisch überzeugend sind.</p>
         <span class="vp">Beitrag lesen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
       <a class="post rv" href="blog-artikel.html">
-        <div class="pimg"><img src="assets/blog-1.jpg" alt=""><div class="ptags"><span>Marketing</span></div></div>
+        <div class="pimg"><img src="assets/blog-1.jpg" alt=""><div class="ptags"><span class="rt">7 Min.</span><span class="cat">Marketing</span></div><span class="pbtn"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
         <h3>Social Media für GaLaBau-Betriebe: So wird man zum Platzhirsch</h3>
         <div class="pmeta"><img class="av" src="assets/founder.jpg" alt="">Greenfield Redaktion · 20. Mai 2026 · 760 Aufrufe</div>
         <p>Reichweite ist kein Zufall. Wie Betriebe mit Video-Content lokale Sichtbarkeit aufbauen und Bewerber wie Kunden anziehen.</p>
         <span class="vp">Beitrag lesen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
       <a class="post rv" href="blog-artikel.html">
-        <div class="pimg"><img src="assets/blog-2.jpg" alt=""><div class="ptags"><span>Digitalisierung</span></div></div>
+        <div class="pimg"><img src="assets/blog-2.jpg" alt=""><div class="ptags"><span class="rt">6 Min.</span><span class="cat">Digitalisierung</span></div><span class="pbtn"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
         <h3>Digitale Prozesse im Grünbetrieb: Wo die Automatisierung sich lohnt</h3>
         <div class="pmeta"><img class="av" src="assets/founder.jpg" alt="">Greenfield Redaktion · 14. Mai 2026 · 640 Aufrufe</div>
         <p>Von der Angebotserstellung bis zur Einsatzplanung – wie kleine und mittlere Betriebe mit den richtigen Tools Zeit zurückgewinnen.</p>
         <span class="vp">Beitrag lesen <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:15px;height:15px"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </a>
       <a class="post rv" href="blog-artikel.html">
-        <div class="pimg"><img src="assets/blog-3.jpg" alt=""><div class="ptags"><span>Branche</span></div></div>
+        <div class="pimg"><img src="assets/blog-3.jpg" alt=""><div class="ptags"><span class="rt">5 Min.</span><span class="cat">Branche</span></div><span class="pbtn"><svg viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span></div>
         <h3>Klimaresiliente Bepflanzung: Pflanzen für heiße, trockene Sommer</h3>
         <div class="pmeta"><img class="av" src="assets/founder.jpg" alt="">Greenfield Redaktion · 7. Mai 2026 · 1.090 Aufrufe</div>
         <p>Der Klimawandel verändert die Pflanzenwahl. Eine Auswahl trockenheitstoleranter Arten, die auch in Zukunft zuverlässig gedeihen.</p>
