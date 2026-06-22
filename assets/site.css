@@ -265,6 +265,10 @@ header{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.86);backdro
 .post:hover .pimg img{transform:scale(1.04)}
 .post .ptags{position:absolute;top:12px;left:12px;display:flex;gap:6px}
 .post .ptags span{background:#fff;font-size:11px;font-weight:600;padding:5px 10px;border-radius:20px;color:var(--ink-2)}
+.post .ptags span.cat{background:var(--green);color:#fff}
+.post .ptags span.rt{background:rgba(0,0,0,.42);color:#fff;backdrop-filter:blur(4px)}
+.post .pimg .pbtn{position:absolute;top:12px;right:12px;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.92);display:grid;place-items:center;z-index:2}
+.post .pimg .pbtn svg{width:15px;height:15px;stroke:var(--ink);fill:none}
 .post h3{font-size:19px;font-weight:700;letter-spacing:-.4px;line-height:1.25}
 .post .pmeta{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--muted);margin:10px 0}
 .post .pmeta .av{width:22px;height:22px;border-radius:50%;background:var(--mint);object-fit:cover}
