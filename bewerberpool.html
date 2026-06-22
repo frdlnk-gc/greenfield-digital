@@ -36,43 +36,49 @@
 .pool-step.on .dot{border-color:var(--green);background:var(--green)}
 .pool-step .dot svg{width:13px;height:13px;stroke:#fff;opacity:0;transition:.2s}
 .pool-step.on .dot svg{opacity:1}
-.pool-step b{color:var(--green);font-weight:700}
+.pool-step .pst{display:flex;flex-direction:column;gap:2px}
+.pool-step .pst b{font-size:15.5px;font-weight:700;color:var(--ink)}
+.pool-step .pst small{font-size:13.5px;color:var(--muted)}
 /* result */
-.pool-res{display:none;max-width:920px;margin:30px auto 0}
+.pool-res{display:none;max-width:920px;margin:30px auto 0;background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-lg);padding:38px}
 .pool-res.on{display:block}
-.res-top{display:grid;grid-template-columns:1.1fr 1fr;gap:18px;margin-bottom:18px}
-.res-box{border-radius:var(--radius);padding:30px 32px}
-.res-box.big{background:linear-gradient(150deg,var(--green) 0%,var(--green-deep) 100%);color:#fff}
-.res-box.big .n{font-size:54px;font-weight:800;letter-spacing:-2px;line-height:1}
-.res-box.big .l{font-size:16px;opacity:.92;margin-top:6px}
-.res-box.act{background:var(--mint-2);border:1px solid var(--mint-line);display:flex;flex-direction:column;justify-content:center}
-.res-box.act .l{font-family:"Poppins";font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--green);font-weight:500}
-.res-box.act .n{font-size:34px;font-weight:800;color:var(--ink);letter-spacing:-1px;margin:6px 0 2px}
-.res-box.act .s{font-size:14px;color:var(--muted)}
-.cand-head{display:flex;align-items:center;justify-content:space-between;margin:26px 0 14px;flex-wrap:wrap;gap:10px}
-.cand-head h3{font-size:21px;font-weight:800;letter-spacing:-.6px}
-.cand-head .tag{font-size:13px;color:var(--green-deep);background:var(--mint);border:1px solid var(--mint-line);padding:6px 13px;border-radius:20px;font-weight:600}
-.cand-list{display:grid;gap:12px}
-.cand{display:flex;align-items:center;gap:18px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:18px 22px;transition:.2s}
+.res-count{display:flex;align-items:center;gap:16px;border-top:1px solid var(--line);padding-top:30px}
+.res-count .n{font-size:46px;font-weight:800;letter-spacing:-2px;color:var(--ink);line-height:1}
+.res-count .l{font-size:16px;color:var(--muted)}
+.res-count .ok{margin-left:auto;width:38px;height:38px;border-radius:50%;background:var(--green);display:grid;place-items:center;flex-shrink:0}
+.res-count .ok svg{width:18px;height:18px;stroke:#fff}
+.res-act-h{font-size:26px;font-weight:800;letter-spacing:-.8px;margin:38px 0 10px}
+.res-act-sub{font-size:15.5px;color:var(--muted);line-height:1.6;margin:0 0 22px;max-width:660px}
+.res-map{position:relative;border:1px solid var(--line);border-radius:18px;background:linear-gradient(180deg,#fff,var(--mint-2));overflow:hidden;padding:24px}
+.res-map svg.map{width:100%;height:auto;display:block}
+.res-map svg.map path{fill:none;stroke:var(--green-glow);stroke-width:1.4;opacity:.55}
+.res-map svg.map .cand-dot{fill:var(--green-glow);stroke:none;opacity:.85}
+.res-map svg.map .me-dot{fill:var(--green-deep);stroke:#fff;stroke-width:2}
+.res-map .legend{display:flex;justify-content:center;gap:28px;margin-top:16px;font-size:13.5px;color:var(--ink-2)}
+.res-map .legend span{display:flex;align-items:center;gap:8px}
+.res-map .legend i{width:11px;height:11px;border-radius:50%;flex-shrink:0}
+.res-map .legend i.me{background:var(--green-deep)}
+.res-map .legend i.qd{background:var(--green-glow)}
+.cand-list{display:grid;gap:14px;margin-top:26px}
+.cand{display:flex;flex-direction:column;gap:14px;background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 24px;transition:.2s}
 .cand:hover{box-shadow:var(--shadow);border-color:var(--mint-line)}
-.cand .av{width:48px;height:48px;border-radius:50%;background:linear-gradient(150deg,var(--green-glow),var(--green-2));color:#fff;display:grid;place-items:center;font-weight:800;font-size:16px;flex-shrink:0}
+.cand .top{display:flex;align-items:center;gap:16px}
+.cand .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(150deg,var(--green-glow),var(--green-2));color:#fff;display:grid;place-items:center;font-weight:800;font-size:15px;flex-shrink:0}
 .cand .ci{flex:1;min-width:0}
-.cand .ci b{font-size:16px;font-weight:700}
+.cand .ci b{font-size:16px;font-weight:700;display:block}
 .cand .ci .role{font-size:14px;color:var(--muted)}
-.cand .chips2{display:flex;flex-wrap:wrap;gap:7px;margin-top:8px}
-.cand .chips2 span{font-size:12px;font-weight:600;background:var(--mint-2);color:var(--green-deep);border:1px solid var(--mint-line);padding:4px 10px;border-radius:20px}
-.cand .dist{text-align:right;flex-shrink:0}
-.cand .dist b{font-size:18px;font-weight:800;color:var(--green);letter-spacing:-.5px}
-.cand .dist span{display:block;font-size:12px;color:var(--muted)}
-.pool-disc{text-align:center;color:var(--muted);font-size:13px;margin-top:22px;display:flex;align-items:center;justify-content:center;gap:8px}
+.cand .dist{margin-left:auto;font-size:15px;font-weight:600;color:var(--muted);flex-shrink:0}
+.cand .bot{display:flex;align-items:center;flex-wrap:wrap;gap:10px;font-size:14px;color:var(--ink-2)}
+.cand .bot .sep{color:var(--line)}
+.cand .chips2{display:flex;flex-wrap:wrap;gap:7px}
+.cand .chips2 span{font-size:12.5px;font-weight:600;background:var(--mint-2);color:var(--green-deep);border:1px solid var(--mint-line);padding:5px 12px;border-radius:20px}
+.pool-disc{text-align:center;color:var(--muted);font-size:13px;margin-top:24px;display:flex;align-items:center;justify-content:center;gap:8px}
 .pool-disc svg{width:15px;height:15px;stroke:var(--green)}
 @media(max-width:680px){
-  .pool-card{padding:26px}
+  .pool-card,.pool-res{padding:26px}
   .pool-grid{grid-template-columns:1fr}
   .pool-grid .span2{grid-column:auto}
-  .res-top{grid-template-columns:1fr}
-  .cand{flex-wrap:wrap}
-  .cand .dist{text-align:left}
+  .res-count .n{font-size:38px}
 }
 </style>
 </head>
@@ -128,9 +134,9 @@
 <section class="hero-c">
   <span class="glow l"></span><span class="glow r"></span>
   <div class="wrap">
-    <span class="pill">★ Bewerbertool</span>
+    <span class="pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><circle cx="6" cy="6" r="2"/><circle cx="14" cy="6" r="2"/><circle cx="10" cy="13" r="2"/><circle cx="18" cy="13" r="2"/><circle cx="6" cy="18" r="2"/></svg>Bewerbertool</span>
     <h1>Greenfield Digital<br><span class="green">Bewerberpool</span></h1>
-    <p class="sub">Finden Sie qualifizierte Fachkräfte für Ihren Betrieb – live aus über 21.200 Bewerbungen in der grünen Branche.</p>
+    <p class="sub">Finden Sie qualifizierte Fachkräfte in Ihrer Region.</p>
   </div>
 </section>
 
@@ -197,58 +203,58 @@
       <div class="pool-prog" id="poolProg">
         <div class="pool-bar"><i id="poolBar"></i></div>
         <div class="pool-steps">
-          <div class="pool-step" id="ps1"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Datenbank wird durchsucht · <b>21.200+ Bewerbungen</b></span></div>
-          <div class="pool-step" id="ps2"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Qualifikationen werden abgeglichen</span></div>
-          <div class="pool-step" id="ps3"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span>Ergebnisse werden zusammengestellt</span></div>
+          <div class="pool-step" id="ps1"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="pst"><b>Datenbank durchsucht</b><small>21.200+ Bewerbungen analysiert</small></span></div>
+          <div class="pool-step" id="ps2"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="pst"><b>Qualifikationen abgeglichen</b><small>Filter angewendet</small></span></div>
+          <div class="pool-step" id="ps3"><span class="dot"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="pst"><b>Ergebnisse zusammengestellt</b><small>Beste Übereinstimmungen gefunden</small></span></div>
         </div>
       </div>
     </div>
 
     <!-- RESULT -->
     <div class="pool-res" id="poolRes">
-      <div class="res-top">
-        <div class="res-box big">
-          <div class="n"><span id="resCount">0</span></div>
-          <div class="l">Verfügbare Kandidaten im gewählten Umkreis</div>
-        </div>
-        <div class="res-box act">
-          <span class="l">Bewerberaktivität in dieser Region</span>
-          <div class="n"><span id="resAct">0</span></div>
-          <div class="s">neue Bewerber in den letzten 30 Tagen</div>
-        </div>
+      <div class="res-count">
+        <div class="n"><span id="resCount">0</span></div>
+        <div class="l">Verfügbare Kandidaten</div>
+        <span class="ok"><svg viewBox="0 0 24 24" fill="none" stroke-width="3"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
       </div>
 
-      <div class="cand-head">
-        <h3>Passende Kandidaten in Ihrer Nähe</h3>
-        <span class="tag">anonymisiert · DSGVO-konform</span>
+      <h3 class="res-act-h">Bewerberaktivität in dieser Region</h3>
+      <p class="res-act-sub"><span id="resAct">0</span> Personen mit ausgewählten Merkmalen haben sich in den letzten 30 Tagen über Greenfield Digital beworben.</p>
+
+      <div class="res-map">
+        <svg class="map" viewBox="0 0 700 360" aria-hidden="true">
+          <path d="M150 60 C200 50 250 70 270 100 C300 95 340 80 380 95 C420 75 470 90 500 80 C540 95 560 130 545 165 C575 185 580 225 555 250 C575 285 545 320 505 315 C470 340 420 330 390 315 C350 335 300 330 270 310 C235 330 190 320 175 290 C140 295 110 270 120 235 C95 215 90 175 115 150 C100 115 120 80 150 60 Z"/>
+          <path d="M270 100 C290 140 285 185 270 215 M380 95 C400 140 395 200 390 250 M500 80 C515 130 510 190 505 250 M120 235 C200 230 290 235 390 250 C460 245 520 250 555 250 M175 290 C260 285 340 295 390 315"/>
+          <circle class="cand-dot" cx="210" cy="130" r="5"/><circle class="cand-dot" cx="300" cy="160" r="5"/><circle class="cand-dot" cx="245" cy="200" r="5"/><circle class="cand-dot" cx="430" cy="140" r="5"/><circle class="cand-dot" cx="470" cy="200" r="5"/><circle class="cand-dot" cx="350" cy="120" r="5"/><circle class="cand-dot" cx="330" cy="235" r="5"/><circle class="cand-dot" cx="400" cy="285" r="5"/><circle class="cand-dot" cx="190" cy="255" r="5"/><circle class="cand-dot" cx="500" cy="270" r="5"/><circle class="cand-dot" cx="265" cy="275" r="5"/>
+          <circle class="me-dot" cx="320" cy="190" r="9"/>
+        </svg>
+        <div class="legend"><span><i class="me"></i>Ihr Standort</span><span><i class="qd"></i>Qualifizierte Bewerber</span></div>
       </div>
+
       <div class="cand-list">
         <div class="cand">
-          <span class="av">MK</span>
-          <div class="ci">
-            <b>M. K. · Landschaftsgärtner</b>
-            <div class="role">6 Jahre Erfahrung · sofort verfügbar</div>
-            <div class="chips2"><span>Führerschein BE</span><span>Motorsäge</span><span>Pflasterbau</span></div>
+          <div class="top">
+            <span class="av">MK</span>
+            <div class="ci"><b>M. K.</b><div class="role">Landschaftsgärtner</div></div>
+            <div class="dist">8 km</div>
           </div>
-          <div class="dist"><b>8 km</b><span>entfernt</span></div>
+          <div class="bot">5 Jahre Erfahrung <span class="sep">·</span> <div class="chips2"><span>Führerschein BE</span><span>Motorsäge</span></div></div>
         </div>
         <div class="cand">
-          <span class="av">SL</span>
-          <div class="ci">
-            <b>S. L. · Garten- &amp; Landschaftspflege</b>
-            <div class="role">3 Jahre Erfahrung · in 4 Wochen verfügbar</div>
-            <div class="chips2"><span>Führerschein B</span><span>Grünpflege</span><span>Teamleitung</span></div>
+          <div class="top">
+            <span class="av">SL</span>
+            <div class="ci"><b>S. L.</b><div class="role">Garten- &amp; Landschaftspflege</div></div>
+            <div class="dist">12 km</div>
           </div>
-          <div class="dist"><b>12 km</b><span>entfernt</span></div>
+          <div class="bot">4 Jahre Erfahrung <span class="sep">·</span> <div class="chips2"><span>Führerschein B</span><span>Grünpflege</span></div></div>
         </div>
         <div class="cand">
-          <span class="av">TM</span>
-          <div class="ci">
-            <b>T. M. · Baumkletterer</b>
-            <div class="role">9 Jahre Erfahrung · sofort verfügbar</div>
-            <div class="chips2"><span>Führerschein BE</span><span>Motorsäge</span><span>SKT-A &amp; B</span></div>
+          <div class="top">
+            <span class="av">TM</span>
+            <div class="ci"><b>T. M.</b><div class="role">Baumkletterer</div></div>
+            <div class="dist">15 km</div>
           </div>
-          <div class="dist"><b>15 km</b><span>entfernt</span></div>
+          <div class="bot">9 Jahre Erfahrung <span class="sep">·</span> <div class="chips2"><span>Führerschein BE</span><span>Motorsäge</span><span>SKT-A &amp; B</span></div></div>
         </div>
       </div>
 
