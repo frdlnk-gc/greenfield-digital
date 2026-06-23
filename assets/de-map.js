@@ -7,4 +7,15 @@ p.push('<g class="de-states">');for(var k in d.paths){p.push('<path d="'+d.paths
 if(o.dots){p.push('<g class="de-dots">');o.dots.forEach(function(c){var pt=d.cities[c.city];if(!pt)return;p.push('<circle cx="'+pt[0]+'" cy="'+pt[1]+'" r="'+(c.r||14)+'" class="'+(c.cls||"")+'"/>');});p.push('</g>');}
 p.push('</svg>');return p.join('');}
 window.gcBuildDeMap=build;
+function autoInit(){
+  if(!window.gcBuildDeMap)return;
+  var def=[{city:'Hamburg',r:20},{city:'Berlin',r:26},{city:'Hannover',r:14},
+    {city:'Dortmund',r:30},{city:'Koeln',r:14},{city:'Frankfurt',r:22},
+    {city:'Leipzig',r:16},{city:'Dresden',r:14},{city:'Nuernberg',r:26},
+    {city:'Stuttgart',r:18},{city:'Muenchen',r:16},{city:'Bremen',r:12}];
+  var i=0;document.querySelectorAll('[data-demap]').forEach(function(el){
+    el.innerHTML=build({filled:true,id:(el.id||('sub'+(i++))),dots:def});
+  });
+}
+if(document.readyState!=='loading')autoInit();else document.addEventListener('DOMContentLoaded',autoInit);
 })();
